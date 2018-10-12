@@ -37,7 +37,7 @@ def save_result(result)
 end
 
 namespace :utils do
-  desc "Scan bitcoin blocks for stored data. Starting block should be set in environment variable BLOCK_BEGIN."
+  desc "Scan bitcore blocks for stored data. Starting block should be set in environment variable BLOCK_BEGIN."
   task scan_blocks: :environment do
     fail 'Missing environment variables' if not ENV['BLOCK_BEGIN'] or not ENV['FILES_PATH'] or not ENV['FILES_URL']
     blockbeg = ENV['BLOCK_BEGIN'].to_i

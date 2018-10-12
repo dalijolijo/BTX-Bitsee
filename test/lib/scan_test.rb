@@ -5,7 +5,7 @@ require 'btcscan'
 
 class ScanTxTest < ActiveSupport::TestCase
   def setup
-    @client = BTCRPCClient.new('http://localhost:8332', 'bitcoin', 'local321')
+    @client = BTCRPCClient.new('http://localhost:8332', 'bitcore', 'local321')
   end
 
   def check_result(values, result)

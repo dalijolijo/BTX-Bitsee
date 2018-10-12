@@ -6,8 +6,8 @@ require 'multi_json'
 class BTCRPCClient
   def initialize(url=nil, username=nil, password=nil)
     url ||= 'http://localhost:8332'
-    username ||= ENV['BTC_USERNAME']
-    password ||= ENV['BTC_PASSWORD']
+    username ||= ENV['BTX_USERNAME']
+    password ||= ENV['BTX_PASSWORD']
     fail 'Missing credentials' if not username or not password
     @conn = Faraday.new(:url => url) do |faraday|
       faraday.headers = {'content-type': 'application/json'}
