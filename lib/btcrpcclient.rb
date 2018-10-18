@@ -5,7 +5,7 @@ require 'multi_json'
 
 class BTCRPCClient
   def initialize(url=nil, username=nil, password=nil)
-    url ||= 'http://localhost:8332'
+    url ||= 'http://localhost:8556'
     username ||= ENV['BTX_USERNAME']
     password ||= ENV['BTX_PASSWORD']
     fail 'Missing credentials' if not username or not password

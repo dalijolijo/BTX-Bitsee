@@ -1,11 +1,12 @@
-# Bitsee
+# Bitsee for BitCore BTX
 
-## What is it?
-![Screenshot](/../screenshots/screenshots/bitsee.png?raw=true "Screenshot")
+![Screenshot](bitsee.jpg?raw=true "Screenshot")
 
 Bitsee is a BitCore (BTX) blockchain embedded data viewer and extractor.
-
 It crawls the blockchain and extracts embedded text and files.
+
+## Docker Solution
+You will find Bitsee for BitCore BTX as docker solution [here](https://github.com/dalijolijo/bitcore-node-manager/blob/master/docker/README.md).
 
 ## Package Requirements
 Some of the packages required on an Ubuntu Xenial host would include:
